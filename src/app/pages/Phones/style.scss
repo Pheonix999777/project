@@ -1,0 +1,67 @@
+.phones {
+  .phones__title {
+    text-align: center;
+    color: #121212;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
+
+  .phones__ul {
+    display: flex;
+    gap: 64px;
+    list-style: none;
+
+    .phones__list {
+      max-width: 196px;
+      text-align: center;
+
+      .phones__color-box {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        margin-top: 20px;
+      }
+
+      .phones__color-box span {
+        display: block;
+        width: 12px;
+        height: 12px;
+        background-color: aqua;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+
+      .phones__status {
+        color: #e38846;
+        font-size: 13px;
+        font-weight: 400;
+      }
+
+      .phones__list-title {
+        color: #121212;
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: 6px;
+      }
+
+      .phones__list-text {
+        color: #121212;
+        font-size: 17px;
+        font-weight: 400;
+        margin-top: 11px;
+      }
+
+      .phones__link {
+        color: #458295;
+        font-size: 13px;
+        font-weight: 400;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 32px;
+      }
+    }
+  }
+}

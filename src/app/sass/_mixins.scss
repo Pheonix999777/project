@@ -1,0 +1,15 @@
+@mixin style-btn {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 22px;
+  border-radius: 16px;
+  padding: 19px 71px;
+  border: none;
+}
+
+@mixin style-flex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

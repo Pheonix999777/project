@@ -1,0 +1,40 @@
+.blog {
+  padding: 129px 0 164px 0;
+
+  .blog__box {
+    text-align: center;
+    .blog__title {
+      color: #000;
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .blog__box-text {
+      color: #000;
+      font-size: 22px;
+      font-weight: 400;
+      opacity: 0.6;
+    }
+  }
+
+  .blog__ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin-top: 66px;
+
+    .blog__list {
+      max-width: 320px;
+    }
+
+    .blog__text {
+      max-width: 255px;
+      margin: 0 auto;
+      color: #000;
+      font-size: 19px;
+      font-weight: 500;
+      margin-top: 20px;
+    }
+  }
+}

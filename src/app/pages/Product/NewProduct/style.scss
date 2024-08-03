@@ -1,0 +1,40 @@
+.product__div {
+  margin-top: 58px;
+  border-radius: 32px;
+  background: #eefbff;
+  padding: 70px 0 56px 0;
+  text-align: center;
+
+  .product__new {
+    color: #2e7890;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .product__new-text {
+    color: #2e7890;
+    font-size: 22px;
+    font-weight: 400;
+    opacity: 0.6;
+    margin-top: 6px;
+  }
+
+  .product__img-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    .product__div-btn {
+      position: absolute;
+      bottom: 55px;
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 60px;
+      background: #2e7890;
+      font-size: 15px;
+      font-weight: 400;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
