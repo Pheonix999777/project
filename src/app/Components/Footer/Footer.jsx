@@ -1,13 +1,21 @@
+"use client";
 import Container from "../Container/Container";
 import Link from "next/link";
 import "./style.scss";
-import { FooterLink, FooterLink2 } from "@/app/utils/data";
+import { Links } from "@/app/utils/data";
 import Telegram from "../../../../public/Icons/Telegram.svg";
 import Facebook from "../../../../public/Icons/Facebook.svg";
 import Instagram from "../../../../public/Icons/Instagram.svg";
 import Twitter from "../../../../public/Icons/Twitter.svg";
+import { useState } from "react";
 
 export default function Footer() {
+  const [active, setActive] = useState(null);
+
+  const handleClick = (index) => {
+    setActive(index);
+  };
+
   return (
     <footer className="footer">
       <Container>
@@ -26,9 +34,13 @@ export default function Footer() {
           </div>
 
           <ul className="footer__ul">
-            {FooterLink.map((item, index) => (
+            {Links.slice(0, 4).map((item, index) => (
               <li key={index} className="footer__list">
-                <Link className="footer__link" href="#">
+                <Link
+                  className={`footer__link ${active === index ? "active" : ""}`}
+                  href="#"
+                  onClick={() => handleClick(index)}
+                >
                   {item.title}
                 </Link>
               </li>
@@ -36,9 +48,15 @@ export default function Footer() {
           </ul>
 
           <ul className="footer__ul">
-            {FooterLink2.map((item, index) => (
-              <li key={index} className="footer__list">
-                <Link className="footer__link" href="#">
+            {Links.slice(4).map((item, index) => (
+              <li key={index + 4} className="footer__list">
+                <Link
+                  className={`footer__link ${
+                    active === index + 4 ? "active" : ""
+                  }`}
+                  href="#"
+                  onClick={() => handleClick(index + 4)}
+                >
                   {item.title}
                 </Link>
               </li>

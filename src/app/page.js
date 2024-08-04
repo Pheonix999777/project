@@ -4,7 +4,7 @@ import Hero from "./pages/Hero/Hero";
 import New from "./pages/New/New";
 import { Phones } from "./pages/Phones/Phones";
 import { Product } from "./pages/Product/Product";
-import { Service } from "./pages/Service/Service";
+import Service from "@/app/pages/Service/Service";
 
 export default function Home() {
   return (
