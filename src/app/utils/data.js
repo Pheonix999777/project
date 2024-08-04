@@ -17,25 +17,21 @@ export const HeroData = [
     title: "Все оригинале толька у нас и толька",
     text: "Goal not by obstacles but by a clear path to a lesser goal.",
     img: Img,
-    bg: "#AB91D9",
   },
   {
     title: "Все оригинале толька у нас и толька",
     text: "Goal not by obstacles but by a clear path to a lesser goal.",
     img: Img,
-    bg: "#F0F9EE",
   },
   {
     title: "Все оригинале толька у нас и толька",
     text: "Goal not by obstacles but by a clear path to a lesser goal.",
     img: Img,
-    bg: "#F0F9EE",
   },
   {
     title: "Все оригинале толька у нас и толька",
     text: "Goal not by obstacles but by a clear path to a lesser goal.",
     img: Img,
-    bg: "#F0F9EE",
   },
 ];
 
