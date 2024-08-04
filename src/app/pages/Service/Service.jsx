@@ -35,13 +35,13 @@ const Service = () => {
       const x = e.pageX || e.touches[0].pageX;
       const walk = x - startX;
 
-      if (walk > -100) {
+      if (walk < -180) {
         // swipe left
         changeCard("left");
         isDragging = false;
         document.removeEventListener("mousemove", onDrag);
         document.removeEventListener("touchmove", onDrag);
-      } else if (walk > 100) {
+      } else if (walk > 180) {
         // swipe right
         changeCard("right");
         isDragging = false;
