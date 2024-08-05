@@ -35,13 +35,13 @@ const Service = () => {
       const x = e.pageX || e.touches[0].pageX;
       const walk = x - startX;
 
-      if (walk < -180) {
+      if (walk < -170) {
         // swipe left
         changeCard("left");
         isDragging = false;
         document.removeEventListener("mousemove", onDrag);
         document.removeEventListener("touchmove", onDrag);
-      } else if (walk > 180) {
+      } else if (walk > 170) {
         // swipe right
         changeCard("right");
         isDragging = false;
@@ -64,10 +64,10 @@ const Service = () => {
         cards.unshift(lastCard);
         updateCardColors();
       } else if (direction === "right") {
-        const firstCard = cards.shift();
-        firstCard.classList.remove("transformPrev", "activeNow");
-        cardList.append(firstCard);
-        cards.push(firstCard);
+        const lastCard = cards.pop();
+        lastCard.classList.remove("transformThis", "activeNow");
+        cardList.prepend(lastCard);
+        cards.unshift(lastCard);
         updateCardColors();
       }
     };
