@@ -77,13 +77,15 @@
           padding: 20px;
           border-radius: 12px;
           background: #f3f3f3;
-          border: none;
           cursor: pointer;
+          display: inline-flex;
         }
       }
 
       .footer__right-wrapper {
+        width: 100%;
         margin-top: 35px;
+        text-align: left;
 
         .footer__right-text {
           color: #131313;

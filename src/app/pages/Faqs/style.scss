@@ -9,6 +9,12 @@
     margin-bottom: 28px;
   }
 
+  .faqs__tabs {
+    &:not(:first-child) {
+      margin-top: 4px;
+    }
+  }
+
   .faqs__btn {
     width: 100%;
     text-align: left;
@@ -22,10 +28,6 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-
-    &:not(:first-child) {
-      margin-top: 4px;
-    }
 
     .faqs__btn-icon {
       width: 24px;
@@ -46,7 +48,7 @@
     padding: 20px 38px;
     background: #fff;
     border-radius: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     &.active {
       display: block;

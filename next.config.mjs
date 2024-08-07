@@ -13,7 +13,7 @@ const nextConfig = {
   },
   sassOptions: {
     includePaths: [path.join(process.cwd(), "src/app/sass")],
-    prependData: `@import "mixins.scss"; @import "veriables.scss";`,
+    prependData: `@import "mixins.scss";`,
   },
 };
 

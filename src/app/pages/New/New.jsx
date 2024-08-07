@@ -17,7 +17,7 @@ export default function New() {
 
         <div className="new__flex">
           <div className="new__wrapper">
-            <h3 className="new__wrapper-title">Смартфоны от ведуших</h3>
+            <h3 className="new__wrapper-title">Наушники нового поколении </h3>
             <p className="new__wrapper-text">
               Risk more than others think is safe. Dream more than others think
               is practical.
@@ -26,7 +26,7 @@ export default function New() {
           </div>
 
           <div className="new__wrapper">
-            <h3 className="new__wrapper-title">Наушники нового поколении</h3>
+            <h3 className="new__wrapper-title">Смартфоны от ведуших</h3>
             <p className="new__wrapper-text">
               We are kept from our goal not by obstacles but by a clear path to
               a lesser goal.

@@ -17,12 +17,8 @@ export const Faqs = () => {
       <Container>
         <h2 className="faqs__title">Часто задаваемые вопросы</h2>
         {Buttons.map((item, index) => (
-          <>
-            <button
-              key={index}
-              className="faqs__btn"
-              onClick={() => handleClick(index)}
-            >
+          <div className="faqs__tabs" key={index}>
+            <button className="faqs__btn" onClick={() => handleClick(index)}>
               {item.text}
               <span
                 className={`faqs__btn-icon ${
@@ -37,7 +33,7 @@ export const Faqs = () => {
             >
               {activeBtn === index && <p>{item.text}</p>}
             </div>
-          </>
+          </div>
         ))}
       </Container>
     </section>

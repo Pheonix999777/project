@@ -65,18 +65,18 @@ export default function Footer() {
 
           <div className="footer__right">
             <div className="footer__icons-box">
-              <button className="footer__social">
+              <Link href={"#"} className="footer__social">
                 <Telegram />
-              </button>
-              <button className="footer__social">
+              </Link>
+              <Link href={"#"} className="footer__social">
                 <Facebook />
-              </button>
-              <button className="footer__social">
+              </Link>
+              <Link href={"#"} className="footer__social">
                 <Instagram />
-              </button>
-              <button className="footer__social">
+              </Link>
+              <Link href={"#"} className="footer__social">
                 <Twitter />
-              </button>
+              </Link>
             </div>
 
             <div className="footer__right-wrapper">

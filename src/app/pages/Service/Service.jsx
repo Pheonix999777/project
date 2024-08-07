@@ -1,6 +1,5 @@
 "use client";
-
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import move from "lodash-move";
 import Container from "@/app/Components/Container/Container";
@@ -22,12 +21,12 @@ const CARD_COLORS = [
 ];
 const CARD_OFFSET = 20;
 const SCALE_FACTOR = 0.06;
-const SPECIAL_COLOR = "#AB91D9"; // Special color for the top card
-const SECOND_COLOR = "#EAE3F7"; // Color for the second card in the stack
-const THIRD_COLOR = "#F5F1FE"; // Color for the third card
+const SPECIAL_COLOR = "#AB91D9";
+const SECOND_COLOR = "#EAE3F7";
+const THIRD_COLOR = "#F5F1FE";
 
 const Service = () => {
-  const [cards, setCards] = React.useState(CARD_COLORS);
+  const [cards, setCards] = useState(CARD_COLORS);
 
   const moveToEnd = (from) => {
     setCards((prevCards) => move(prevCards, from, prevCards.length - 1));
