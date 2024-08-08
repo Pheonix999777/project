@@ -5,6 +5,8 @@
     max-width: 1430px;
     margin: 0 auto;
     padding: 0 15px;
+    overflow: hidden;
+    padding-bottom: 50px;
 
     .hero__div {
       margin-left: -15px;
@@ -48,7 +50,6 @@
 
       .slick-dots {
         bottom: -48px;
-        margin-left: 10px;
       }
 
       .slick-dots li {
