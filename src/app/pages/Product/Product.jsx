@@ -23,7 +23,7 @@ export const Product = () => {
           <div className="product__wrapper">
             <span className="product__subname">Macbook Pro</span>
             <p className="product__wrapper-text">Dark 16 32</p>
-            <Image src={Img} alt="" width={288} height={267} />
+            <Image className="product__img" src={Img} alt="" width={288} height={267} />
             <button className="product__wrapper-btn">
               <ArrowUpRight />
             </button>
@@ -31,7 +31,7 @@ export const Product = () => {
           <div className="product__wrapper">
             <span className="product__name">Macbook Pro</span>
             <p className="product__wrapper-word">Dark 16 32</p>
-            <Image src={Img} alt="" width={288} height={267} />
+            <Image className="product__img" src={Img} alt="" width={288} height={267} />
             <button className="product__wrapper-btn">
               <ArrowUpRight />
             </button>

@@ -147,10 +147,12 @@
       }
     }
 
-    .header__ul {
-      gap: 10px;
-      margin-left: 10px;
-      padding: 16px 16px;
+    .header__nav {
+      .header__ul {
+        gap: 10px;
+        margin-left: 10px;
+        padding: 16px 16px;
+      }
     }
 
     .header__actions {

@@ -33,35 +33,39 @@ export default function Footer() {
             </p>
           </div>
 
-          <ul className="footer__ul">
-            {Links.slice(0, 4).map((item, index) => (
-              <li key={index} className="footer__list">
-                <Link
-                  className={`footer__link ${active === index ? "active" : ""}`}
-                  href="#"
-                  onClick={() => handleClick(index)}
-                >
-                  {item.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <div className="footer__link-wrapper ">
+            <ul className="footer__ul">
+              {Links.slice(0, 4).map((item, index) => (
+                <li key={index} className="footer__list">
+                  <Link
+                    className={`footer__link ${
+                      active === index ? "active" : ""
+                    }`}
+                    href="#"
+                    onClick={() => handleClick(index)}
+                  >
+                    {item.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
 
-          <ul className="footer__ul">
-            {Links.slice(4).map((item, index) => (
-              <li key={index + 4} className="footer__list">
-                <Link
-                  className={`footer__link ${
-                    active === index + 4 ? "active" : ""
-                  }`}
-                  href="#"
-                  onClick={() => handleClick(index + 4)}
-                >
-                  {item.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
+            <ul className="footer__ul">
+              {Links.slice(4).map((item, index) => (
+                <li key={index + 4} className="footer__list">
+                  <Link
+                    className={`footer__link ${
+                      active === index + 4 ? "active" : ""
+                    }`}
+                    href="#"
+                    onClick={() => handleClick(index + 4)}
+                  >
+                    {item.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
           <div className="footer__right">
             <div className="footer__icons-box">
@@ -80,15 +84,19 @@ export default function Footer() {
             </div>
 
             <div className="footer__right-wrapper">
-              <p className="footer__right-text">Наш телефон:</p>
-              <a className="footer__number" href="">
-                +998 90 000-00-00
-              </a>
+              <div>
+                <p className="footer__right-text">Наш телефон:</p>
+                <a className="footer__number" href="">
+                  +998 90 000-00-00
+                </a>
+              </div>
 
-              <p className="footer__right-text">Электронная почта:</p>
-              <a className="footer__number" href="">
-                info@gmail.com
-              </a>
+              <div>
+                <p className="footer__right-text">Электронная почта:</p>
+                <a className="footer__number" href="">
+                  info@gmail.com
+                </a>
+              </div>
             </div>
           </div>
         </div>

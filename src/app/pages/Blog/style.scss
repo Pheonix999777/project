@@ -39,3 +39,33 @@
     }
   }
 }
+
+@media screen and (max-width: 521px) {
+  .blog {
+    padding: 100px 0 120px 0;
+
+    .blog__box {
+      .blog__title {
+        font-size: 32px;
+        margin-bottom: 15px;
+      }
+
+      .blog__box-text {
+        font-size: 18px;
+      }
+    }
+
+    .blog__ul {
+      margin-top: 32px;
+      overflow-x: auto;
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+
+      .blog__list {
+        max-width: 250px;
+        flex: 0 0 auto;
+      }
+    }
+  }
+}

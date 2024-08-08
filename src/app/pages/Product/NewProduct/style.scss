@@ -38,3 +38,22 @@
     }
   }
 }
+
+@media screen and (max-width: 521px) {
+  .product__div {
+    padding: 40px 0 50px 0;
+
+    .product__new {
+      font-size: 32px;
+      padding: 0 10px;
+    }
+
+    .product__new-text {
+      margin: 0 auto;
+      max-width: 255px;
+      font-size: 18px;
+      margin-top: 16px;
+      padding: 0 10px;
+    }
+  }
+}
