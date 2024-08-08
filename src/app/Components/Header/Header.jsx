@@ -61,9 +61,11 @@ export default function Header() {
                 </li>
               ))}
             </ul>
-            <a className="header__mobile-call" href="">
-              You want it come get it
-            </a>
+            <div className="header__call-box">
+              <a className="header__mobile-call" href="">
+                You want it come get it
+              </a>
+            </div>
           </nav>
           {show && (
             <div className="headr__dark" onClick={() => setShow(false)}></div>

@@ -188,10 +188,11 @@
         background: #fff;
         padding: 30px 20px 0 0;
         width: 0;
-        height: 100%;
+        height: calc(100vh + 30px);
         transition: all 0.3s ease-in;
         overflow: hidden;
         z-index: 1000;
+        text-align: center;
         &.active {
           width: 70%;
         }
@@ -199,28 +200,32 @@
         .header__ul {
           flex-direction: column;
           padding: 0;
-          margin-left: 0;
+          margin-left: 40px;
           background: transparent;
-          margin-left: 50px;
         }
 
-        .header__mobile-call {
-          display: block;
-          border-radius: 12px;
-          background: #121212;
-          padding: 15px 25px;
-          max-width: 233px;
-          color: #fff;
-          font-size: 16px;
-          font-weight: 500;
-          text-decoration: none;
-          margin-top: 20px;
-          margin-left: 50px;
+        .header__call-box {
+          padding-left: 40px;
+          display: flex;
+          justify-content: center;
+
+          .header__mobile-call {
+            display: block;
+            border-radius: 12px;
+            background: #121212;
+            padding: 15px 25px;
+            max-width: 233px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+            margin-top: 20px;
+          }
         }
 
         .header__close {
           display: block;
-          margin-left: auto;
+          margin-left: 50px;
           font-size: 25px;
           border: none;
           margin-bottom: 30px;
